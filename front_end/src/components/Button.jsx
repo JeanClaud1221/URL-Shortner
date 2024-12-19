@@ -1,7 +1,7 @@
-function Button({text}){
+function Button({text,clicker}){
     return (
         <>
-        <button className="main-dark white border-none w-4 h-2">{text}</button>
+        <button onClick={clicker} className="main-dark white border-none min-w-fit px-1 min-h-fit h-2 text-large">{text}</button>
         </>
     )
 }
