@@ -1,5 +1,5 @@
 import Navigation from "./Navigation"
-function Navbar({sign_in,sign_up}){
+function Navbar({sign_in,sign_up,login_function,logged_in}){
     return (
 
         <>
@@ -8,7 +8,7 @@ function Navbar({sign_in,sign_up}){
         <div>
              <h2 className="main-text px-2">SHORT URL</h2>
         </div>
-        <Navigation sign_in={sign_in} sign_up={sign_up}/>
+        <Navigation sign_in={sign_in} sign_up={sign_up} is_logged_in={logged_in} login={login_function}/>
 
 
         </div>

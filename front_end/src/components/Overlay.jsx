@@ -1,9 +1,14 @@
 export default function Overlay({is_open,close,content}){
     if(is_open){
             return(
-                <div className=" w-screen h-screen test-bg position-fixed z-2">
-                    <button onClick={close}>X</button>
+                <div className=" w-screen h-screen bg-black-transparent position-fixed z-2">
+                    <div className=" d-flex flex-justify-end w-55p px-2 py-.5">
+
+                    <button onClick={close} className="h-2 w-2 full-rounded border-none">X</button>
+                    </div>
+                    <div className="d-flex flex-align-center flex-justify-center h-full">
                         {content}
+                    </div>
                 </div>
             )
     }
