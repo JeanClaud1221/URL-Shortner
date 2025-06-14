@@ -1,7 +1,7 @@
 export default function Hero(){
     return (
         <>
-            <div className="w-33p d-flex flex-col h-full">
+            <div className="w-33p d-flex flex-col h-full bg-white-transparent px-2 py-2 min-w-.5">
                 <h2 className="main-text my-.75">Are you tired of Long Urls</h2>
                 <h3 className="main-text my-.75">A URL shortener takes long, complicated web addresses and turns them into short, sleek links. With just a few clicks, you can generate a clean, concise link that redirects users to the same destination perfect for sharing, tracking, and branding.</h3>
                 <ul>

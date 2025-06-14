@@ -4,9 +4,9 @@ import "/src/App.css"
 function App() {
 
   return(
-    <div className="d-flex flex-justify-center">
+    <div className="d-flex flex-justify-center h-full body-bg">
     
-    <div className="body-bg h-screen max-w-laptop w-full">
+    <div className="max-w-laptop w-full h-full">
     <MainPage />
     </div>
 

@@ -1,7 +1,6 @@
-import Button from "./button"
-import { useState } from "react"
-function Navigation({sign_in,sign_up,is_logged_in,logge_in}){
-    if (!window.sessionStorage.getItem("logged_in")){
+import Button from "./Button"
+function Navigation({sign_in,sign_up,is_logged_in}){
+    if (!is_logged_in){
         return(
             <div className="d-flex flex-justify-center">
 

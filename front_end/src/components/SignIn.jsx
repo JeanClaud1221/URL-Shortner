@@ -1,6 +1,6 @@
 import { useState } from "react"
 import axios from "axios"
-export default function Sign_In({login_function}){
+export default function Sign_In(login){
     const [email,set_email]=useState("")
     const [password,set_password]=useState("")
     function update_email(val){set_email(val)}
@@ -9,13 +9,12 @@ export default function Sign_In({login_function}){
         // Implement the logic to make the sign in use a request to check if its valid
         axios.post('http://localhost:3000/test',{em:email,pw:password})
             .then((res)=>{
-                login_function()
+                console.log(res.body)
+                login()
             })
             .catch((err)=>{
                 console.log(err.message)
             })
-        console.log(email)
-        console.log(password)
         set_email("")
         set_password("")
     }

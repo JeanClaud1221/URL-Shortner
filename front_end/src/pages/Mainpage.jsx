@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import UrlShortner from "../components/UrlShortner"
 import Overlay from "../components/Overlay"
-import Sign_In from "../components/signIn"
+import Sign_In from "../components/SignIn"
 import Sign_Up from "../components/SignUp"
 import Hero from "../components/Hero"
 import { useState } from "react"
@@ -12,6 +12,7 @@ function MainPage(){
 
     function toggle_login(){
         set_login(!is_logged_in)
+        console.log("Do I work or not")
     }
 
     function toggle_sign_in(){
@@ -36,11 +37,11 @@ function MainPage(){
         <>
         <div>
 
-        <Overlay is_open={sign_in_toggle} close={toggle_sign_in} content={<Sign_In/>}/>
-        <Overlay is_open={sign_up_toggle} close={toggle_sign_up} content={<Sign_Up/>}/>
+        <Overlay is_open={sign_in_toggle} close={toggle_sign_in} content={Sign_In} login={toggle_login}/>
+        <Overlay is_open={sign_up_toggle} close={toggle_sign_up} content={Sign_Up} login={toggle_login}/>
 
-        <Navbar sign_in={toggle_sign_in} sign_up={toggle_sign_up} login_function={toggle_login}/>
-        <div className=" d-flex w-full flex-justify-space-evenly my-2 h-full">
+        <Navbar sign_in={toggle_sign_in} sign_up={toggle_sign_up} is_logged_in={is_logged_in}/>
+        <div className=" d-flex w-full flex-justify-space-evenly my-2 h-full flex-wrap">
             <UrlShortner/>
             <Hero/>
         </div>

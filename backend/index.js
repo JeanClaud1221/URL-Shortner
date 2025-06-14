@@ -8,6 +8,9 @@ app.get('/', (req, res) => console.log(('Hello World!')))
 
 app.post('/test',(req,res)=>{
     console.log(req.body)
-    res.status(200)
+    res.status(200).send({t1:"test"})
+})
+app.post('/silly',(req,res)=>{
+    res.status(200).send({res:`your silly url ${req.body.url}`})
 })
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
