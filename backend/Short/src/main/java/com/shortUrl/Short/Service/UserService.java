@@ -23,5 +23,9 @@ public class UserService {
     public List<User> getUsers(){
         return repository.findAll();
     }
+    public String getShort(String s){
+        User u= repository.findByoriginal(s);
+        return u.getShortened();
+    }
 
 }

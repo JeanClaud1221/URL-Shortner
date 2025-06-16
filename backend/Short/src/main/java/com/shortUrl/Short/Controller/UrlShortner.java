@@ -12,6 +12,7 @@ import java.util.List;
 public class UrlShortner {
     @Autowired
     UserService service;
+
     @PostMapping("/save")
     public String Test(@RequestBody User u){
         service.AddUser(u);
@@ -25,5 +26,9 @@ public class UrlShortner {
     @GetMapping("/test")
     public String tester(){
         return "hello there";
+    }
+    @GetMapping("/g/{url}")
+    public String getShortUrl(@PathVariable String url){
+        return service.getShort(url);
     }
 }
