@@ -18,7 +18,10 @@ public class UserService {
         System.out.println("Database cleared");
     }
     public void AddUser(User u){
-        repository.save(u);
+        User usr=repository.findByoriginal(u.getOriginal());
+        if(usr==null){
+            repository.save(u);
+        }
     }
     public List<User> getUsers(){
         return repository.findAll();
@@ -26,6 +29,10 @@ public class UserService {
     public String getShort(String s){
         User u= repository.findByoriginal(s);
         return u.getShortened();
+    }
+    public String getLong(String s){
+        User u=repository.findByshortened(s);
+        return u.getOriginal();
     }
 
 }

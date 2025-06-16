@@ -20,9 +20,9 @@ function UrlShortner(){
         setUrl(val)
     }
     async function getUrl(){
-        const obj={"url":url}
-        const res=await axios.post("http://localhost:3000/silly",obj)
-        setShortenedUrls(res.data.res)
+        const obj={"data":url}
+        const res=await axios.post("http://localhost:8080/save",obj)
+        setShortenedUrls(res.data.data)
     }
     function copyText(){
         navigator.clipboard.writeText(shortenedUrl)
