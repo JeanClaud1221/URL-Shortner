@@ -12,6 +12,7 @@ import java.util.List;
 public class UserService {
     @Autowired
     UserRepository repository;
+
     @PostConstruct
     public void cleardb(){
         repository.deleteAll();

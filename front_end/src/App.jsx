@@ -6,7 +6,7 @@ function App() {
   return(
     <div className="d-flex flex-justify-center h-full body-bg">
     
-    <div className="max-w-laptop w-full h-full">
+    <div className="max-w-full w-full h-full">
     <MainPage />
     </div>
 

@@ -21,18 +21,6 @@ function MainPage(){
     function toggle_sign_up(){
         set_sign_up_clicked(!sign_up_toggle)
     }
-    // if(sign_in_toggle){
-    //     return <SignIn xclick={click_sign_in}/>
-    // }else{
-    //     return(
-    //         <>
-    //         <div>
-    //         <Navbar sign_in={click_sign_in} sign_up={click_sign_up}/>
-    //         </div>
-    //         </>
-    //     )
-    // }
-
     return (
         <>
         <div>

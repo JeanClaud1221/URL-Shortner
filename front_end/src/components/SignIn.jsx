@@ -21,7 +21,7 @@ export default function Sign_In(login){
 
     return(
         <>
-        <div className=" w-33p h-50p bg-white d-flex flex-col flex-justify-space-evenly flex-align-center px-2 py-2 rounded">
+        <div className=" w-full h-50p bg-white d-flex flex-col flex-justify-space-evenly flex-align-center px-2 py-2 rounded max-w-.8p min-w-.3p">
             <h3>Email</h3>
             <input type="text" className="text-input" onChange={(e)=>{update_email(e.target.value)}} value={email}/>
             <h3>Password</h3>

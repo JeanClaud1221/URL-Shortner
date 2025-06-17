@@ -30,13 +30,15 @@ function UrlShortner(){
 
     return (
         <>
-        <div className="d-flex flex-col flex-justify-center min-w-.3 max-w-33p">
+        <div className="d-flex flex-col flex-justify-center min-w-.4p max-w-3p">
             <h2 className="main-text">Long URL</h2>
-            <input type="text" className=" text-input font-large h-2 min-h-1.5" onChange={(e)=>{updateUrl(e)}}/>
+            <input type="text" className=" text-input font-large h-2 min-h-1.5 min-w-.5p max-w-.5p" onChange={(e)=>{updateUrl(e)}}/>
             {displayShortned()}
-            <div className=" d-flex w-auto flex-justify-space-between my-1 max-w-4">
+            <div className="width-auto d-flex flex-justify-center">
+            <div className=" d-flex w-full flex-justify-space-between my-1 max-w-20r">
             <Button text={"Generate Url"} additional="button-rounded" clicker={getUrl}/>
             <Button text={"Copy"} additional="button-rounded" clicker={copyText}/>
+            </div>
             </div>
         </div>
         </>

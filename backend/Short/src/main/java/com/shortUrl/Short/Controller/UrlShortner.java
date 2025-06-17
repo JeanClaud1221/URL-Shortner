@@ -5,6 +5,7 @@ import com.shortUrl.Short.Model.Response;
 import com.shortUrl.Short.Model.User;
 import com.shortUrl.Short.Service.UserService;
 import com.shortUrl.Short.Utility.Encoder;
+import jakarta.persistence.Table;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
