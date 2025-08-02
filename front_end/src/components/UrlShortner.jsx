@@ -9,8 +9,8 @@ function UrlShortner(){
 
             return (
                 <>
-                <h3 className="main-text">Short URL</h3>
-                <input type="text" readOnly  value={shortenedUrl} className="text-input font-large h-2 min-h-1.5 color-green"/>
+                <h3 className="TODO">Short URL</h3>
+                <input type="text" readOnly  value={shortenedUrl} className="TODO"/>
                 </>
             )
         }
@@ -30,14 +30,14 @@ function UrlShortner(){
 
     return (
         <>
-        <div className="d-flex flex-col flex-justify-center min-w-.4p max-w-3p">
-            <h2 className="main-text">Long URL</h2>
-            <input type="text" className=" text-input font-large h-2 min-h-1.5 min-w-.5p max-w-.5p" onChange={(e)=>{updateUrl(e)}}/>
+        <div className="TODO">
+            <h2 className="TODO">Long URL</h2>
+            <input type="text" className="TODO" onChange={(e)=>{updateUrl(e)}}/>
             {displayShortned()}
-            <div className="width-auto d-flex flex-justify-center">
-            <div className=" d-flex w-full flex-justify-space-between my-1 max-w-20r">
-            <Button text={"Generate Url"} additional="button-rounded" clicker={getUrl}/>
-            <Button text={"Copy"} additional="button-rounded" clicker={copyText}/>
+            <div className="TODO">
+            <div className="TODO">
+            <Button text={"Generate Url"} additional="TODO" clicker={getUrl}/>
+            <Button text={"Copy"} additional="TODO" clicker={copyText}/>
             </div>
             </div>
         </div>

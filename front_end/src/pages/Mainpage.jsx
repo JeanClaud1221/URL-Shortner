@@ -29,7 +29,7 @@ function MainPage(){
         <Overlay is_open={sign_up_toggle} close={toggle_sign_up} content={Sign_Up} login={toggle_login}/>
 
         <Navbar sign_in={toggle_sign_in} sign_up={toggle_sign_up} is_logged_in={is_logged_in}/>
-        <div className=" d-flex w-full flex-justify-space-evenly my-2 h-full flex-wrap">
+        <div className="TODO">
             <UrlShortner/>
             <Hero/>
         </div>

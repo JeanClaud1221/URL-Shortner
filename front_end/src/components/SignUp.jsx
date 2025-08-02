@@ -18,18 +18,18 @@ export default function Sign_Up(){
 
     return(
         <>
-        <div className=" w-full h-50p bg-white d-flex flex-col flex-justify-space-evenly flex-align-center px-2 py-2 rounded max-w-.8p min-w-.3p">
+        <div className="TODO">
             <h3>Email</h3>
-            <input type="text" className="text-input" onChange={(e)=>{update_email(e.target.value)}} value={email}/>
+            <input type="text" className="TODO" onChange={(e)=>{update_email(e.target.value)}} value={email}/>
 
             <h3>Password</h3>
-            <input type="password" className="text-input" onChange={(e)=>{update_password(e.target.value)}} value={password}/>
+            <input type="password" className="TODO" onChange={(e)=>{update_password(e.target.value)}} value={password}/>
 
             <h3>Confirm Password</h3>
-            <input type="password" className="text-input" onChange={(e)=>{update_confirm_password(e.target.value)}} value={confirm_password}/>
+            <input type="password" className="TODO" onChange={(e)=>{update_confirm_password(e.target.value)}} value={confirm_password}/>
             
             <p>By clicking on “Create Account”, I agree to the Terms of Service,Privacy Policy, and Use of Cookies.</p>
-            <button className="h-2 border-none w-66p main-dark white button-rounded f-medium" onClick={create_account}>Create Account</button>
+            <button className="TODO" onClick={create_account}>Create Account</button>
         </div>
         </>
     )
