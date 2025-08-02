@@ -5,7 +5,7 @@ function Navigation({sign_in,sign_up,is_logged_in}){
             <div className="TODO">
 
 
-            <Button text={"Sign In"} clicker={sign_in}/>
+            <Button text={"Sign In"} clicker={sign_in} type={"white"}/>
             <Button text={"Sign Up"} clicker={sign_up}/>
             <div className="TODO"></div>
             </div>

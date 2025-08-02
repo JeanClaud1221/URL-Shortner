@@ -5,16 +5,16 @@ import "/src/App.css"
 function App() {
 
   return(
-    // <div className="TODO">
+    <div className="bg-main h-screen w-full">
     
-    // <div className="TODO">
-    // <MainPage />
-    // </div>
+    <div className="TODO">
+    <MainPage />
+    </div>
 
-    // </div>
-    <>
-    <Button/>
-    </>
+    </div>
+    // <>
+    // <Button/>
+    // </>
   )
 }
 

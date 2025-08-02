@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@theme {
+  /* ... */
+}
+
+@layer components {
+  .bg-main {
+    @apply bg-[#0a0a0a];
+  }
+  .hover\:bg-main:hover {
+    @apply bg-[#1a1a1a]; /* Slightly lighter on hover */
+  }
+}
